@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PsySafe NFC Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container" role="main">
+    <h1>PsySafe - NFC Wristband</h1>
+    <section id="status" class="status">Status: Ready</section>
+
+    <section id="card" class="card hidden" aria-live="polite">
+      <h2 id="pName">Patient Name</h2>
+      <p><strong>ID:</strong> <span id="pId"></span></p>
+      <p><strong>Age:</strong> <span id="pAge"></span></p>
+      <p><strong>Diagnosis:</strong> <span id="pDiag"></span></p>
+      <p><strong>Risk Level:</strong> <span id="pLevel"></span></p>
+      <p><strong>Handling Tips:</strong> <span id="pTips"></span></p>
+    </section>
+
+    <section class="notes">
+      <h3>Notes:</h3>
+      <ul>
+        <li>This demo maps NFC tag UID (hex) to patient records using a simple mapping inside app.js.</li>
+        <li>Replace the example tag UIDs in app.js with your real tag UIDs after programming the wristbands.</li>
+        <li>For production, connect to a secure backend and use authentication.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
